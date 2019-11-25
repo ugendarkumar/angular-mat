@@ -1,0 +1,29 @@
+<div class="content">
+  <div class="row">
+    <div class="col-md-12">
+        <h4>Cab Request</h4>
+    </div>
+
+  </div>
+
+  <mat-tab-group #tabGroup (selectedTabChange)="tabChanged($event)">
+    <mat-tab label="Cab Request List">
+        <app-cab-request-list></app-cab-request-list>
+ </mat-tab>
+    <mat-tab label="Cab Allocation">
+          <app-cab-allocation></app-cab-allocation>
+     </mat-tab>
+    <mat-tab label="Trip Details">
+         <app-trip-details></app-trip-details>
+      </mat-tab>
+    <mat-tab label="Address Approval">
+         <app-address-approval></app-address-approval>
+     </mat-tab>
+  </mat-tab-group>
+
+</div>
+
+<router-outlet></router-outlet>
+
+
+

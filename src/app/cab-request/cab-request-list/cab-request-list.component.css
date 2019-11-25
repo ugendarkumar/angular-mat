@@ -1,0 +1,57 @@
+.cab-header{
+  margin: 0px;
+  padding: 15px 0px;
+  vertical-align: middle;
+}
+
+
+::ng-deep .mat-form-field {
+  width: 125px;
+}
+
+::ng-deep .mat-form-field:not(.mat-form-field-has-label) .mat-form-field-infix {
+  border-top-width: 0;
+  height: 2px;
+}
+
+
+::ng-deep .mat-form-field-wrapper{
+  padding: 0px;
+}
+.cabListHeading{
+  padding-top: 7px;
+}
+
+
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+height: 37px;
+}
+
+::ng-deep .mat-form-field-flex{
+  border:none;
+}
+
+::ng-deep .mat-form-field-label-wrapper{
+  height: 60%;
+}
+
+
+select-opt-size{
+  max-width: 11.666667%;
+}
+
+::ng-deep .mat-button{
+background-color: red;
+margin:2px;
+}
+
+@media (min-width: 768px){
+  .select-opt-size{
+    max-width: 11.666667%;
+  }
+  .select-date-size{
+    max-width:18%;
+  }
+}
+

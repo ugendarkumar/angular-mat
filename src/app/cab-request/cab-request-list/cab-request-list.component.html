@@ -1,0 +1,34 @@
+<div class="row cab-header">
+  <div class="col-md-3 select-date-size">
+    <h4 class="cabListHeading">Cab Request List</h4>
+  </div>
+  <div class="col-md-2  select-opt-size">
+      <mat-form-field appearance="outline">
+          <input matInput [matDatepicker]="picker" placeholder="Date">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+  </div>
+   <div class="col-md-2 select-opt-size">
+      <mat-form-field appearance="outline">
+          <mat-select placeholder="Shift Time">
+            <mat-option *ngFor="let food of foods" [value]="food.value">
+              {{food.viewValue}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+  </div>
+  <div class="col-md-2 select-opt-size">
+      <mat-form-field appearance="outline">
+          <mat-select placeholder="Select Route">
+            <mat-option *ngFor="let food of foods" [value]="food.value">
+              {{food.viewValue}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+  </div>
+  <div class="col-md-3 offset-2">
+      <button mat-button>Reject</button>
+      <button mat-button>Allocate</button>
+    </div>
+</div>
