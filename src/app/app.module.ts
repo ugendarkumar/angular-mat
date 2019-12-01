@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {MatSortModule} from '@angular/material/sort';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -16,11 +17,15 @@ import {MatTabsModule} from '@angular/material/tabs';
 import { HomeComponent } from './home/home.component';
 import { BootstrapComponent } from './bootstrap/bootstrap.component';
 import {MatCardModule} from '@angular/material/card';
+import {MatTableModule} from '@angular/material/table';
 import {MatDatepickerModule} from '@angular/material/datepicker';
-import { MatInputModule, MatFormFieldModule, MatNativeDateModule } from '@angular/material';
+import { MatInputModule, MatFormFieldModule, MatNativeDateModule, MatCheckboxModule } from '@angular/material';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatSelectModule} from '@angular/material/select';
 import {MatButtonModule} from '@angular/material/button';
+import { MatPaginatorModule } from '@angular/material';
+import { FormsModule } from '@angular/forms';
+import { TripHistoryComponent } from './cab-request/trip-details/trip-history/trip-history.component';
 
 
 @NgModule({
@@ -33,10 +38,16 @@ import {MatButtonModule} from '@angular/material/button';
     TripDetailsComponent,
     AddressApprovalComponent,
     HomeComponent,
-    BootstrapComponent
+    BootstrapComponent,
+    TripHistoryComponent
   ],
   imports: [
+    FormsModule,
+    MatCheckboxModule,
+    MatPaginatorModule,
+    MatTableModule,
     BrowserModule,
+    MatSortModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatTabsModule,

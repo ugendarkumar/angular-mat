@@ -1,7 +1,10 @@
 .cab-header{
-  margin: 0px;
+  margin: 0;
   padding: 15px 0px;
-  vertical-align: middle;
+  margin-left: 220px;
+
+  /* margin-left: auto; */
+  /* vertical-align: middle; */
 }
 
 
@@ -42,9 +45,34 @@ select-opt-size{
 }
 
 ::ng-deep .mat-button{
-background-color: red;
-margin:2px;
+background-color:#03A9F4;
+color:white;
 }
+
+.cab-button{
+  border-radius: 8px;
+  margin: 0px 8px;
+  padding: 2px 20px;
+  width: 120px;
+
+}
+
+
+
+table {
+  /* margin-top: 15px; */
+  width: 1280px;
+  padding: 5px;
+}
+
+.table-container{
+  margin-top: 20px;
+}
+
+th.mat-sort-header-sorted {
+  color: black;
+}
+
 
 @media (min-width: 768px){
   .select-opt-size{
@@ -53,5 +81,17 @@ margin:2px;
   .select-date-size{
     max-width:18%;
   }
+
+  .offset-md-2 {
+      margin-left: 21.666667%;
+  }
 }
 
+
+.mat-row:nth-child(even){
+  background-color:#edf7f7;
+  }
+
+.mat-row:nth-child(odd){
+  background-color:white;
+  }

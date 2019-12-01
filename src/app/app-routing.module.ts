@@ -1,3 +1,4 @@
+import { TripHistoryComponent } from './cab-request/trip-details/trip-history/trip-history.component';
 import { BootstrapComponent } from './bootstrap/bootstrap.component';
 import { HomeComponent } from './home/home.component';
 import { AddressApprovalComponent } from './cab-request/address-approval/address-approval.component';
@@ -13,10 +14,10 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent, pathMatch: 'full'},
   { path: 'bootstrap', component: BootstrapComponent, pathMatch: 'full'},
   { path: 'cab-request', component: CabRequestComponent,
-  pathMatch: 'full',
    children:[
+    //  { path: '', redirectTo: '/cab-request-list', pathMatch: 'full' },
      {
-      path: '', component: CabRequestListComponent
+      path: 'cab-request-list', component: CabRequestListComponent
      },
      {
       path: 'cab-allocation', component: CabAllocationComponent
@@ -26,7 +27,8 @@ const routes: Routes = [
      },
      {
       path: 'address-approval', component: AddressApprovalComponent
-     }
+     },
+    { path: 'trip-history', component: TripHistoryComponent}
    ]
 },
 {
