@@ -26,6 +26,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { MatPaginatorModule } from '@angular/material';
 import { FormsModule } from '@angular/forms';
 import { TripHistoryComponent } from './cab-request/trip-details/trip-history/trip-history.component';
+import { CabDetailsComponent } from './cab-request/cab-allocation/cab-details/cab-details.component';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { TripHistoryComponent } from './cab-request/trip-details/trip-history/tr
     AddressApprovalComponent,
     HomeComponent,
     BootstrapComponent,
-    TripHistoryComponent
+    TripHistoryComponent,
+    CabDetailsComponent
   ],
   imports: [
     FormsModule,

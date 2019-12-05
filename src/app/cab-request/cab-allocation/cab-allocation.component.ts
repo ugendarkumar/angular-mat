@@ -3,7 +3,7 @@ import {MatSort} from '@angular/material/sort';
 import {MatPaginator} from '@angular/material/paginator';
 import {MatTableDataSource} from '@angular/material/table';
 import {SelectionModel} from '@angular/cdk/collections';
-
+import {Router} from '@angular/router';
 
 
 export interface Food {
@@ -66,11 +66,12 @@ const ELEMENT_DATA: PeriodicElement[] = [
 })
 export class CabAllocationComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
 
 
-  displayedColumns: string[] = ['select', 'date', 'name', 'gender', 'empID', 'shiftTime', 'area', 'trip', 'landmark', 'route', 'phone'];
+  displayedColumns: string[] = ['select', 'date', 'name', 'gender', 'empID', 'shiftTime', 'area', 'trip', 'landmark', 'route',
+   'phone', 'action'];
   dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
   selection = new SelectionModel<PeriodicElement>(true, []);
 
@@ -99,6 +100,11 @@ export class CabAllocationComponent implements OnInit {
     this.isAllSelected() ?
         this.selection.clear() :
         this.dataSource.data.forEach(row => this.selection.select(row));
+  }
+
+
+  viewCabDetails() {
+    this.router.navigate(['/cab-request/cab-details'])
   }
 
 

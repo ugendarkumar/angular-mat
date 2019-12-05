@@ -37,7 +37,12 @@ export class CabRequestComponent implements OnInit, AfterViewInit {
         label: 'Address approval',
         link: '/cab-request/address-approval',
         index: 3
-    }
+    },
+    {
+      label: 'Address approval',
+      link: '/cab-request/cab-details',
+      index: 1
+  }
   ];
   }
 

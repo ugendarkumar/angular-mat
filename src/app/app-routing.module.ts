@@ -1,3 +1,4 @@
+import { CabDetailsComponent } from './cab-request/cab-allocation/cab-details/cab-details.component';
 import { TripHistoryComponent } from './cab-request/trip-details/trip-history/trip-history.component';
 import { BootstrapComponent } from './bootstrap/bootstrap.component';
 import { HomeComponent } from './home/home.component';
@@ -28,7 +29,8 @@ const routes: Routes = [
      {
       path: 'address-approval', component: AddressApprovalComponent
      },
-    { path: 'trip-history', component: TripHistoryComponent}
+    { path: 'trip-history', component: TripHistoryComponent},
+    { path: 'cab-details', component: CabDetailsComponent}
    ]
 },
 {
